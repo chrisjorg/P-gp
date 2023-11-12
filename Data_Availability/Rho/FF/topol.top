@@ -1,0 +1,42 @@
+;; The main GROMACS topology file
+;;
+
+; Include forcefield parameters
+#include "toppar/charmm36.itp"
+#include "Rho_merged.itp"
+#include "toppar/PROA.itp"
+#include "posres.itp"
+#include "toppar/CHL1.itp"
+#include "toppar/OSM.itp"
+#include "toppar/SAPE.itp"
+#include "toppar/SOPE.itp"
+#include "toppar/SLPC.itp"
+#include "toppar/SAPS.itp"
+#include "toppar/SAPC.itp"
+#include "toppar/POPC.itp"
+#include "toppar/SAPI.itp"
+#include "toppar/SOD.itp"
+#include "toppar/CLA.itp"
+#include "toppar/TIP3.itp"
+
+[ system ]
+; Name
+Title
+
+[ molecules ]
+; Compound	#mols
+RHO               40
+PROA               1
+CHL1  	         140
+OSM   	          90
+SAPE  	          69
+SOPE  	          31
+SLPC  	          38
+SAPS  	          38
+SAPC  	          40
+POPC  	          20
+SAPI  	          10
+;TIP3  	       58910
+TIP3  	       58311
+SOD   	         164
+CLA   	         129
